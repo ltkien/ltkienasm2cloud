@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+.nav {
+  list-style: none;
+  display: inline block;
+}
+.navbar {
+  margin-bottom: 100px;
+}
