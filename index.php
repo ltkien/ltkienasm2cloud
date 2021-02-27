@@ -77,7 +77,7 @@
   <div class="row">
     <div class="col-2"></div>
     <div class="col-8">
-      <form action="checkLogin.php" method="post">
+      <form action="checkLoginNew.php" method="post">
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
