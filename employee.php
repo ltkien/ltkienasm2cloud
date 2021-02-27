@@ -203,7 +203,7 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="admin.php"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a class="active-menu" href="employee.php"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     
 				
@@ -211,23 +211,23 @@
                         <a href="#"><i class="fa fa-sitemap"></i> ATN shop warehouse<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="ATN1warehouse.php">ATN shop 1</a>
+                                <a href="ATN1warehouseS.php">ATN shop 1</a>
                             </li>
                             <li>
-                                <a href="ATN2warehouse.php">ATN shop 2</a>
+                                <a href="ATN2warehouseS.php">ATN shop 2</a>
                             </li>
                             <li>
-                                <a href="ATN3warehouse.php">ATN shop 3</a>
+                                <a href="ATN3warehouseS.php">ATN shop 3</a>
                             </li>
                             <li>
-                                <a href="ATN4warehouse.php">ATN shop 4</a>
+                                <a href="ATN4warehouseS.php">ATN shop 4</a>
                             </li>
 							</ul>
                     </li>
                     
 
                     <li>
-                        <a href="Toy.php"><i class="fa fa-desktop"></i> Toys</a>
+                        <a href="ToyS.php"><i class="fa fa-desktop"></i> Toys</a>
                     </li> 
                     
     
