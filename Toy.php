@@ -1,3 +1,18 @@
+<?php
+$con = pg_connect("host=ec2-54-157-149-88.compute-1.amazonaws.com 
+dbname=d7li5vh6npno94
+port=5432
+user=zuqmehsapjptmv
+password=623913fc950b42d76791b758a5f0146ddb4b104e5af583b34628a354935751e9
+sslmode=require");
+
+$query = "select id, toy_name, toy_price, toy_category, atn_store, toy_quantity, toy_description from toy ;";
+$result = pg_query($con, $query);
+$resultCheck = pg_num_rows($result);
+?>
+
+
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -209,7 +224,7 @@
 					 
 					
                     <li>
-                        <a class="active-menu" href="ATNShopRevenue.php"><i class="fa fa-fw fa-file"></i> ATN shop revenue</a>
+                        <a  href="ATNShopRevenue.php"><i class="fa fa-fw fa-file"></i> ATN shop revenue</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-sitemap"></i> ATN shop warehouse<span class="fa arrow"></span></a>
@@ -247,7 +262,7 @@
                     </li>
 
                     <li>
-                        <a href="Toy.php"><i class="fa fa-desktop"></i> Toys</a>
+                        <a class="active-menu" href="Toy.php"><i class="fa fa-desktop"></i> Toys</a>
                     </li> 
                     
     
@@ -262,12 +277,73 @@
       
 		<div id="page-wrapper">
 		  <div class="header"> 
-        <h1 class="page-header">
-          Toys <small> </small>
-        </h1>				
-		  </div>
+            <h1 class="page-header">
+                Toys <small> </small>
+            </h1>				
+		</div>
+
+        <!-- /. Main  -->
+   
+
+        <table id="view-data" class="table" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Toy</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Store</th>
+            <th>Quantity</th>
+            <th>Description</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          if ($resultCheck > 0) {
+            while ($row = pg_fetch_assoc($result)) {
+          ?>
+              <tr>
+                <td>
+                  <?php echo $row['id']; ?>
+                </td>
+                <td>
+                  <?php echo $row['toy_name']; ?>
+                </td>
+                <td>
+                  <?php echo $row['toy_price,']; ?>
+                </td>
+                <td>
+                  <?php echo $row['toy_category']; ?>
+                </td>
+                <td>
+                  <?php echo $row['atn_store']; ?>
+                </td>
+                <td>
+                  <?php echo $row['toy_quantity']; ?>
+                </td>
+                <td>
+                  <?php echo $row['toy_description']; ?>
+                </td>
+                <td>
+                  <div class="btn-group" data-toggle="buttons"><a href="/toydelete.php?id=$result[id]" class="btn btn-primary btn-sm">Delete</a></div>
+                </td>
+              </tr>
+          <?php
+            }
+          } else {
+            echo "<script>alert('Connect fail!');</script>" . pg_errormessage($query);
+          }
+          ?>
+        </tbody>
+      </table>
+
+
+
+
+
     </div>  
-    <!-- /. WRAPPER  -->
+    
     <!-- JS Scripts-->
     <!-- jQuery Js -->
     <script src="assets/js/jquery-1.10.2.js"></script>
