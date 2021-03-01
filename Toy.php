@@ -294,7 +294,6 @@ echo ("hi");
             <th>#</th>
             <th>Toy</th>
             <th>Price</th>
-            <th>Category</th>
             <th>Store</th>
             <th>Quantity</th>
             <th>Description</th>
@@ -315,10 +314,7 @@ echo ("hi");
                   <?php echo $row['toy_name']; ?>
                 </td>
                 <td>
-                  <?php echo $row['toy_price,']; ?>
-                </td>
-                <td>
-                  <?php echo $row['toy_category']; ?>
+                  <?php echo $row['toy_price']; ?>
                 </td>
                 <td>
                   <?php echo $row['atn_store']; ?>
