@@ -328,6 +328,9 @@ echo ("hi");
                 <td>
                   <div class="delete" data-toggle="buttons"><a href="toydelete.php?id=<?php echo $row["id"]; ?>">DELETE</a></div>
                 </td>
+		<td>
+                  <div class="btn btn-primary" ><a href="toydelete.php?id=<?php echo $row["id"]; ?>">DELETE</a></div>
+                </td>
               </tr>
           <?php
             }
