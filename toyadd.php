@@ -295,7 +295,7 @@
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="submit" class="btn btn-success">SUBMIT</button>
                     <button type="reset" class="btn btn-primary">RESET</button>
-                    <a class="btn btn-info" href="#" role="button">MODIFY</a>
+                    <a class="btn btn-info" href="Toy.php" role="button">MODIFY</a>
                     
                 </div>
             </div>
