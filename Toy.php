@@ -10,6 +10,7 @@ $query = "select id, toy_name, toy_price, toy_category, atn_store, toy_quantity,
 
 
 $result = pg_query($con, $query);
+echo ("hi");
 $resultCheck = pg_num_rows($result);
 
 ?>
