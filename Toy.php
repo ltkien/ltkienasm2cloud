@@ -337,6 +337,7 @@ echo ("hi");
           ?>
         </tbody>
       </table>
+	<a class="btn btn-primary" href="toyadd.php" role="button">Add new toy</a>
 
 
 
