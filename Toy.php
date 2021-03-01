@@ -1,5 +1,5 @@
 <?php
-echo('hi');
+
 
 $con = pg_connect("host=ec2-54-157-149-88.compute-1.amazonaws.com 
 dbname=d7li5vh6npno94
@@ -11,6 +11,7 @@ sslmode=require");
 $query = "select id, toy_name, toy_price, toy_category, atn_store, toy_quantity, toy_description from toy ;";
 $result = pg_query($con, $query);
 $resultCheck = pg_num_rows($result);
+echo('hi');
 ?>
 
 
