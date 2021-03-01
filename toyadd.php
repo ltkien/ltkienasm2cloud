@@ -280,10 +280,6 @@
                     <input class="form-control" type="number" name="toy-price" id="toy-price" placeholder="Enter toy's price" required>
                 </div>
                 <div class="form-group">
-                    <label for="toy-category">Category</label>
-                    <input class="form-control before-add-btn" type="text" name="toy-category" id="toy-category" placeholder="Enter toy's category" required>
-                </div>
-                <div class="form-group">
                     <label for="toy-store">Store update</label>
                     <input class="form-control before-add-btn" type="text" name="store" id="store" placeholder="Enter Store update" required>
                 </div>
