@@ -1,5 +1,5 @@
 <?php
-
+echo('hi');
 
 $con = pg_connect("host=ec2-54-157-149-88.compute-1.amazonaws.com 
 dbname=d7li5vh6npno94
