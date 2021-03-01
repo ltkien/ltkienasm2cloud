@@ -293,7 +293,7 @@ echo ("hi");
           <tr>
             <th>#</th>
             <th>Toy</th>
-            <th>Price</th>
+            <th>Price ($)</th>
             <th>Store</th>
             <th>Quantity</th>
             <th>Description</th>
