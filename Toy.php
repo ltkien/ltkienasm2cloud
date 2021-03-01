@@ -301,7 +301,8 @@ $resultCheck = pg_num_rows($result);
         </thead>
         <tbody>
           <?php
-          if ($resultCheck > 0) {
+          	echo ("Hello");
+		if ($resultCheck > 0) {
             while ($row = pg_fetch_assoc($result)) {
           ?>
               <tr>
