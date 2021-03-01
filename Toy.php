@@ -6,7 +6,7 @@ user=zuqmehsapjptmv
 password=623913fc950b42d76791b758a5f0146ddb4b104e5af583b34628a354935751e9
 sslmode=require");
 
-$query = "select id, toy_name, toy_price, toy_category, atn_store, toy_quantity, toy_description from toy ;";
+$query = "select id, toy_name, toy_price, atn_store, toy_quantity, toy_description from toy ;";
 
 
 $result = pg_query($con, $query);
