@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["email"])) {
-  include('toy.php');
+  include('Toy.php');
 } else {
-  header('Location: ./index.php');
+  header('Location: ./Toy.php');
 }
