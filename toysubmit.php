@@ -12,14 +12,13 @@ if ($connect === false) {
   //echo ("Connect successfully!");
   $toy_name = $_POST['toy-name'];
   $toy_price = $_POST['toy-price'];
-  $toy_category = $_POST['toy-category'];
   $atn_store = $_POST['store'];
   $toy_quantity = $_POST['toy-quantity'];
   $toy_description = $_POST['toy-description'];
 }
 //echo ("Connect successfully!");
-$query = "INSERT INTO toy (toy_name, toy_price, toy_category, atn_store, toy_quantity, toy_description) 
-VALUES('$toy_name', '$toy_price', '$toy_category', '$atn_store', '$toy_quantity', '$toy_description');";
+$query = "INSERT INTO toy (toy_name, toy_price, atn_store, toy_quantity, toy_description) 
+VALUES('$toy_name', '$toy_price','$atn_store', '$toy_quantity', '$toy_description');";
 $result = pg_query($connect, $query);
 if ($result) {
   echo "<script>alert('Record added succesfully!, Refresh');</script>";
