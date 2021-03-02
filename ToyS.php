@@ -278,7 +278,7 @@ echo ("hi");
             <th>Store</th>
             <th>Quantity</th>
             <th>Description</th>
-            <th>Action</th>
+            
           </tr>
         </thead>
         <tbody>
