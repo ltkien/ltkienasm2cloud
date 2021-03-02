@@ -225,7 +225,10 @@ echo ("hi");
                     </li>
                     
 					 
-			
+					
+                    <li>
+                        <a  href="ATNShopRevenue.php"><i class="fa fa-fw fa-file"></i> ATN shop revenue</a>
+                    </li>
                     <li>
                         <a href="#"><i class="fa fa-sitemap"></i> ATN shop warehouse<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
@@ -243,7 +246,23 @@ echo ("hi");
                             </li>
 							</ul>
                     </li>
-                   
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap"></i> ATN shop employees<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="ATN1employees.php">ATN shop 1</a>
+                            </li>
+                            <li>
+                                <a href="ATN2employees.php">ATN shop 2</a>
+                            </li>
+                            <li>
+                                <a href="ATN3employees.php">ATN shop 3</a>
+                            </li>
+                            <li>
+                                <a href="ATN4employees.php">ATN shop 4</a>
+                            </li>
+							</ul>
+                    </li>
 
                     <li>
                         <a class="active-menu" href="Toy.php"><i class="fa fa-desktop"></i> Toys</a>
@@ -278,7 +297,7 @@ echo ("hi");
             <th>Store</th>
             <th>Quantity</th>
             <th>Description</th>
-            
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -308,6 +327,10 @@ echo ("hi");
                 </td>
                 
                 
+                <td>
+                  <div class="btn btn-danger" ><a href="toydelete.php?id=<?php echo $row["id"]; ?>">DELETE</a></div>
+                </td>
+              </tr>
           <?php
             }
           } else {
@@ -317,7 +340,8 @@ echo ("hi");
         </tbody>
       </table>
 
-          
+          <a class="btn btn-primary" href="toyadd.php" role="button">Add new toy</a>
+
 
 
 
