@@ -279,11 +279,10 @@ echo ("hi");
         <!-- /. NAV SIDE  -->
       
 		<div id="page-wrapper">
-			<div class="header"> 
-			    <h1 class="page-header">
-				Toys <small> </small>
-			    </h1>				
-			</div>
+		  <div class="header"> 
+            <h1 class="page-header">
+                Toys <small> </small>
+            </h1>				
 		</div>
 
         <!-- /. Main  -->
@@ -327,7 +326,8 @@ echo ("hi");
                   <?php echo $row['toy_description']; ?>
                 </td>
                 
-		<td>
+                =
+                <td>
                   <div class="btn btn-danger" ><a href="toydelete.php?id=<?php echo $row["id"]; ?>">DELETE</a></div>
                 </td>
               </tr>
@@ -339,7 +339,8 @@ echo ("hi");
           ?>
         </tbody>
       </table>
-	<a class="btn btn-primary" href="toyadd.php" role="button">Add new toy</a>
+
+          <a class="btn btn-primary" href="toyadd.php" role="button">Add new toy</a>
 
 
 
