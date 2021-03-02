@@ -326,7 +326,6 @@ echo ("hi");
                   <?php echo $row['toy_description']; ?>
                 </td>
                 
-                =
                 <td>
                   <div class="btn btn-danger" ><a href="toydelete.php?id=<?php echo $row["id"]; ?>">DELETE</a></div>
                 </td>
