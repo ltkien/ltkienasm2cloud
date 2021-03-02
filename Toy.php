@@ -41,7 +41,7 @@ echo ("hi");
 
 <body>
     <div id="wrapper">
-        <nav class="navbar navbar-default top-navbar" role="navigation">
+         <nav class="navbar navbar-default top-navbar" role="navigation">
             <div class="navbar-header">
                
                 <a class="navbar-brand" href="index.php"><strong><i class="icon fas fa-store"></i> ATN store</strong></a>
@@ -225,7 +225,10 @@ echo ("hi");
                     </li>
                     
 					 
-			
+					
+                    <li>
+                        <a  href="ATNShopRevenue.php"><i class="fa fa-fw fa-file"></i> ATN shop revenue</a>
+                    </li>
                     <li>
                         <a href="#"><i class="fa fa-sitemap"></i> ATN shop warehouse<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
@@ -243,10 +246,26 @@ echo ("hi");
                             </li>
 							</ul>
                     </li>
-                   
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap"></i> ATN shop employees<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="ATN1employees.php">ATN shop 1</a>
+                            </li>
+                            <li>
+                                <a href="ATN2employees.php">ATN shop 2</a>
+                            </li>
+                            <li>
+                                <a href="ATN3employees.php">ATN shop 3</a>
+                            </li>
+                            <li>
+                                <a href="ATN4employees.php">ATN shop 4</a>
+                            </li>
+							</ul>
+                    </li>
 
                     <li>
-                        <a class="active-menu" href="Toy.php"><i class="fa fa-desktop"></i> Toys</a>
+                        <a class="active-menu" href="ToyS.php"><i class="fa fa-desktop"></i> Toys</a>
                     </li> 
                     
     
@@ -278,7 +297,7 @@ echo ("hi");
             <th>Store</th>
             <th>Quantity</th>
             <th>Description</th>
-            <th>Action</th>
+            
           </tr>
         </thead>
         <tbody>
