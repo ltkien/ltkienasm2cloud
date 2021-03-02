@@ -279,10 +279,11 @@ echo ("hi");
         <!-- /. NAV SIDE  -->
       
 		<div id="page-wrapper">
-		  <div class="header"> 
-            <h1 class="page-header">
-                Toys <small> </small>
-            </h1>				
+			<div class="header"> 
+			    <h1 class="page-header">
+				Toys <small> </small>
+			    </h1>				
+			</div>
 		</div>
 
         <!-- /. Main  -->
